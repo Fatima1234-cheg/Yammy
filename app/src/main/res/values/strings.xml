@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">YAMMY</string>
+    <string name="description_alternative_pour_les_utilisateurs_ayant_des_difficult_s_visuelles">Description alternative pour les utilisateurs ayant des difficultés visuelles</string>
+    <string name="tous_les_champs_sont_obligatoires">Tous les champs (*) sont obligatoires</string>
+    <string name="d_poser_une_annonce">déposer une annonce</string>
+    <string name="_1_3_apropos_de_votre_annonce">1/3: apropos de votre annonce</string>
+    <string name="titre">Titre :(*)</string>
+    <string name="cat_gorie">Catégorie:(*)</string>
+    <string name="secteur">Secteur:</string>
+    <string name="type_de_n_contact">Type de\n contact:</string>
+    <string name="descripion">Descripion:(*)</string>
+    <string name="ville">Ville:</string>
+    <string name="suivant">Suivant</string>
+    <string name="_123">123</string>
+    <string-array name="cat">
+        <item>...</item>
+    <item>Emploi</item>
+    <item>Immobilier</item>
+
+    </string-array>
+    <string-array name="secteur">
+        <item>Choisir une catégorie</item>
+        <item>Informatique</item>
+        <item>Commerce</item>
+    </string-array>
+        <string-array name="ville">
+            <item>Agadir</item>
+            <item>Rabat</item>
+            <item>Casa</item>
+            <item>El jdida</item>
+
+        </string-array>
+
+
+</resources>

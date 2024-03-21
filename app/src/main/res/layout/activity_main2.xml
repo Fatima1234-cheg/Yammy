@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:layout_editor_absoluteX="-188dp"
+        tools:layout_editor_absoluteY="-32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/baseline_person_add_24" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/blue"
+android:layout_marginTop="19dp"
+                android:paddingTop="11dp"
+                android:text="Vous serez le plus proche au marché de travail \n
+     C'est Gratuit"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Vsoo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Vous étes:" />
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Recruteur cherche des Cv et pose des annonces de travail" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="67dp">
+
+            <RadioButton
+
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Candidat cherche et des annonces et pose des Cv" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="75dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="25dp"
+                android:text="Email:" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="300dp"
+                    android:id="@+id/EditEmail"
+                   android:layout_marginLeft="23dp"
+                    android:layout_height="50dp"
+                    android:hint="Votre adresse email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Ville:" />
+
+            <Spinner
+                android:id="@+id/spinner123"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="Mot de passe:" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="297dp"
+                    android:id="@+id/EditPassword"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:hint="Choissisez un mot de passe " />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="80dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="(au moins 5 caractéres)Choisissez un mot de passe  qui n'est pas facile a deviner " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="48dp">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView"
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="7dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingTop="13dp"
+                android:id="@+id/textView11"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Confirmation de mot de passe :" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="303dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/EditConfirmation"
+                    android:layout_height="wrap_content"
+                    android:hint="Choisissez un mot de passe" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:text="En validant mon inscription\n'accepte tous les conditions\n
+générales d'utilisation de lkhdema.ma"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/CrCompte"
+                android:onClick="CrCompte"
+                android:layout_width="10dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:text="Créer un compte !"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
