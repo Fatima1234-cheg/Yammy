@@ -12,23 +12,21 @@ public class MyDB extends SQLiteOpenHelper {
 
     }
 
+    public static boolean verifierUtilisateur(String email, String mot) { return true;
+    }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("Create table utilisateurs(  RADIO_SELECTION  TexT,Email Text,Ville Text,Motdepasse text)");
+        db.execSQL("Create table Annonces(  Titre  Text, Categorie Text, Secteur Text,Typedecontact Text,Description Text, Ville Text)");
 
 
     }
 
-    EditText txt1;
-
-    public EditText getTxt1() {
-        return txt1;
-    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
 
     }
 
@@ -42,6 +40,20 @@ public class MyDB extends SQLiteOpenHelper {
         db.insert("utilisateurs", null, values);
         db.close();
     }
+    public void ajouterAnnonces(String Titre, String Categorie, String Secteur, String Typedecontact, String Description, String Ville) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("Titre", Titre);
+        values.put("Categorie", Categorie);
+        values.put("Secteur", Secteur);
+        values.put("typedecontact", Typedecontact);
+        values.put("Description", Description);
+        values.put("Ville", Ville);
+
+        db.insert("Annonces", null, values);
+        db.close();
+    }
+
 
 }
 

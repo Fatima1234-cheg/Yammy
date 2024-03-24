@@ -12,10 +12,11 @@
     <string name="ville">Ville:</string>
     <string name="suivant">Suivant</string>
     <string name="_123">123</string>
+    <string name="il_y_a_actuellement_annonce_s_sur">Il y a actuellement annonce(s) sur</string>
     <string-array name="cat">
         <item>...</item>
-    <item>Emploi</item>
-    <item>Immobilier</item>
+        <item>Emploi</item>
+        <item>Immobilier</item>
 
     </string-array>
     <string-array name="secteur">
@@ -23,13 +24,13 @@
         <item>Informatique</item>
         <item>Commerce</item>
     </string-array>
-        <string-array name="ville">
-            <item>Agadir</item>
-            <item>Rabat</item>
-            <item>Casa</item>
-            <item>El jdida</item>
+    <string-array name="ville">
+        <item>Agadir</item>
+        <item>Rabat</item>
+        <item>Casa</item>
+        <item>El jdida</item>
 
-        </string-array>
+    </string-array>
 
 
 </resources>
